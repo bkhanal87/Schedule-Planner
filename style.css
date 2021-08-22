@@ -1,0 +1,83 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 20vh;
+  padding: 4rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table{
+  width: 100%;
+  max-width: 50rem;
+}
+tr:nth-child(even) th {
+  color: #ff6961;
+  font-weight: normal;
+}
+th,
+td {
+  padding: 0.5rem 1rem;
+}
+
+th {
+  font-weight: normal;
+  border-top: thin dotted;
+}
+td {
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.4;
+  border-radius: 0.2rem;
+  transition: opacity 0.3s ease;
+}
+.morning-session-1 {background-color: #ffa726};
+
+.lunch-time {background-color: #9CCC65};
+
+.afternoon-session-1 {background-color: #ff8a65};
+
+.afternoon-session-2 {background-color: #26c6da;}
