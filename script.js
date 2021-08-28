@@ -7,22 +7,22 @@ $(document).ready(function(){
         console.log(userDescription,time);
         localStorage.setItem(time, userDescription)
     })
-$("#9 .description").val(localStorage.getItem("9"))
-$("#10 .description").val(localStorage.getItem("10"))
-$("11 .description").val(localStorage.getItem("11"))
-$("#12 .description").val(localStorage.getItem("12"))
-$("#13 .description").val(localStorage.getItem("13"))
-$("#14 .description").val(localStorage.getItem("14"))
-$("#15 .description").val(localStorage.getItem("15"))
-$("#16 .description").val(localStorage.getItem("16"))
-$("#17 .description").val(localStorage.getItem("17"))
+$("#hour-9 .description").val(localStorage.getItem("hour-9"))
+$("#hour-10 .description").val(localStorage.getItem("hour-10"))
+$("#hour-11 .description").val(localStorage.getItem("hour-11"))
+$("#hour-12 .description").val(localStorage.getItem("hour-12"))
+$("#hour-13 .description").val(localStorage.getItem("hour-13"))
+$("#hour-14 .description").val(localStorage.getItem("hour-14"))
+$("#hour-15 .description").val(localStorage.getItem("hour-15"))
+$("#hour-16 .description").val(localStorage.getItem("hour-16"))
+$("#hour-17 .description").val(localStorage.getItem("hour-17"))
 }) 
 
 let now = moment();
 
 moment("08-27-2021", "MM-DD-YYYY hh:mm:ss", true);
 
-moment().hour(Number);
+//moment().hour(Number);//
 
 let timeBlocks = document.querySelectorAll(".time-block");
 
@@ -33,7 +33,7 @@ for(let i=0; i<timeBlocks.length; i++) {
     let currentHour = moment().hours();
     if (hour<currentHour){timeBlocks[i].classList.add("past")}
     else if (hour>currentHour){timeBlocks[i].classList.add("future")}
-    else if (hour===currentHour){timeBlocks[i].classList.add("currenthour")}
+    else if (hour==currentHour){timeBlocks[i].classList.add("present")}
 
 
 }
