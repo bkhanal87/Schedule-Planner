@@ -24,6 +24,22 @@ moment("08-27-2021", "MM-DD-YYYY hh:mm:ss", true);
 
 moment().hour(Number);
 
+let timeBlocks = document.querySelectorAll(".time-block");
+
+for(let i=0; i<timeBlocks.length; i++) {
+
+    let hour = timeBlocks[i].getAttribute("id").split("-")[1]
+    console.log(hour);
+    let currentHour = moment().hours();
+    if (hour<currentHour){timeBlocks[i].classList.add("past")}
+    else if (hour>currentHour){timeBlocks[i].classList.add("future")}
+    else if (hour===currentHour){timeBlocks[i].classList.add("currenthour")}
+
+
+}
+
+
+
 
 
 
