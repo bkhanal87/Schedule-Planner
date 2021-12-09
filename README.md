@@ -28,7 +28,7 @@ THEN the saved events persist
 
 ## Installation guide 
                                                                   
-clone my github repo for this project to your computer. Export utility libray to work with date and time
+clone my github repo for this project to your local computer. Export utility library to work with date and time
 
 ## Usage 
 
